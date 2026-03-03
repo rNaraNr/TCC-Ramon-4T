@@ -5,17 +5,10 @@
 
     --color-fundo: #f1f1e7;
     --color-texto-main: #120f22;
-    --color-texto-discreto: #565072;
+    --color-discreto: #565072;
     --color-destaque: #8c52ff;
 }
 
-.cor-discreto{
-    color: var(--color-texto-discreto);
-}
-
-.cor-destaque{
-    background-color: var(--color-destaque);
-}
 
 @media (prefers-color-scheme: dark) {
     :root {
