@@ -1,18 +1,26 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap");
 
 @theme {
     --font-principal: "Fira Sans", sans-serif;
 
-    --color-cor-fundo: #f1f1e7;
-    --color-cor-texto: #120f22;
+    --color-fundo: #f1f1e7;
+    --color-texto-main: #120f22;
+    --color-texto-discreto: #565072;
+    --color-destaque: #8c52ff;
+}
 
+.cor-discreto{
+    color: var(--color-texto-discreto);
+}
+
+.cor-destaque{
+    background-color: var(--color-destaque);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-cor-fundo: #120f22;
-        --color-cor-texto: #f1f1e7;
+        --color-fundo: #120f22;
+        --color-texto-main: #f1f1e7;
     }
 }
 
@@ -20,7 +28,8 @@
     body {
         min-height: 100vh;
         width: 100vw;
-        background-color: var(--color-cor-fundo);
-        color: var(--color-cor-texto);
+        background-color: var(--color-fundo);
+        color: var(--color-texto-main);
+        font-family: var(--font-principal);
     }
 }
