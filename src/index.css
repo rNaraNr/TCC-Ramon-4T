@@ -9,14 +9,6 @@
     --color-destaque: #8c52ff;
 }
 
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-fundo: #120f22;
-        --color-texto-main: #f1f1e7;
-    }
-}
-
 @layer base {
     body {
         min-height: 100vh;
@@ -24,5 +16,25 @@
         background-color: var(--color-fundo);
         color: var(--color-texto-main);
         font-family: var(--font-principal);
+    }
+
+    .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    a.nav svg,
+    svg path{
+        fill: var(--color-texto-main);
+        height: 24px;
+        width: 24px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-fundo: #120f22;
+        --color-texto-main: #f1f1e7;
     }
 }
