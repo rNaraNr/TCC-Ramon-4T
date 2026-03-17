@@ -1,0 +1,14 @@
+@layer base {
+    .nav {
+        @apply flex justify-center items-center h-12 w-12 sm:w-full;
+    }
+
+    .nav:hover {
+        @apply border-b-2 border-discreto duration-500 transition-opacity;
+    }
+
+    a.nav svg,
+    svg path {
+        @apply fill-texto-main h-[30px] w-[30px];
+    }
+}

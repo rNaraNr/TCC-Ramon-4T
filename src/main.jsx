@@ -7,9 +7,12 @@ import Nav from './components/Navbar.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
     <>
         <Nav />
-        <h1 className='text-9xl'>Fira Sans</h1>
-        <h1 className='text-discreto text-9xl'>Fira Sans</h1>
-        <h1 className='bg-destaque text-9xl'>Fira Sans</h1>
-        <h1 className='bg-destaque text-discreto text-9xl'>Fira Sans</h1>
+        <div className='componente'>
+            <h1 className='text-9xl'>Fira Sans</h1>
+            <h1 className='text-discreto text-9xl'>Fira Sans</h1>
+            <h1 className='bg-destaque text-9xl'>Fira Sans</h1>
+            <h1 className='bg-destaque text-discreto text-9xl'>Fira Sans</h1>
+        </div>
+
     </>
 )
